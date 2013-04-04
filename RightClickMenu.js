@@ -308,3 +308,10 @@ var SectionLine = function(){
 SectionLine.prototype = Object.create(MenuItem.prototype);
 SectionLine.prototype.constructor = SectionLine;
 
+
+var Point = function(x,y){
+    this.x = x || 0;
+      this.y = y || 0;
+};
+
+

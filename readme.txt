@@ -29,14 +29,14 @@ JavaScriptで右クリックメニューを提供します。
 
 MenuItemGroupクラスを使ってグループ化する事ができます。
 
-var rightClickMenu = new RightClickMenu();
+var rightClickMenu = new RightClickMenu(element);
 var group = new MenuItemGroup();
 var item1 = new MenuItem("doSomething",func1);
 var item2 = new MenuItem("doSomething2",func2);
 group.add(item1);
 group.add(item2);
 rightClickMenu.addDefault();
-RightClickMenu.add(group);
+rightClickMenu.add(group);
 
 こんな感じでつかう。
 

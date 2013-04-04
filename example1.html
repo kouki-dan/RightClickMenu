@@ -1,0 +1,28 @@
+<!DOCTYPE HTML>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title></title>
+  <script src="./RightClickMenu.js" type="text/javascript"></script>
+  <script>
+window.addEventListener("load",function(){
+  var rightClickMenu = new RightClickMenu(window);
+  var group = new MenuItemGroup();
+  var item1 = new MenuItem("doSomething",function(){
+    alert("doSomething"); 
+  });
+  var item2 = new MenuItem("doSomething2",function(){
+    alert("doSomething2");
+  }); 
+  group.add(item1);
+  group.add(item2);
+  rightClickMenu.addDefault();
+  rightClickMenu.add(group);
+},true);
+
+  </script>
+</head>
+<body>
+    
+</body>
+</html>
