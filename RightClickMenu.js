@@ -70,7 +70,9 @@ RightClickMenu.prototype.initListeners = function(target){
   target.addEventListener("mousedown",function(e){
     if(e.button == 2){
       if(!that.root.visible){
-        that.rightClick(new Point(e.pageX,e.pageY));
+        setTimeout(function(){
+          that.rightClick(new Point(e.pageX,e.pageY));
+        },100);
       }
     }
   },true);
